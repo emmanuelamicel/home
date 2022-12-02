@@ -1,0 +1,16 @@
+.navbar {
+  position: fixed;
+  color: white;
+  background-color: #333333;
+  width: 100%;
+  display: flex;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  float: left;
+  margin-left: 50px;
+}

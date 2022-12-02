@@ -8,6 +8,7 @@ It is a sandbox in which I practice several technologies, frontend or backend. T
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
 * [Next.js](https://nextjs.org/)
 
 ## Ideas
