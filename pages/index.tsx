@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-import Portfolio from '../components/Portfolio'
+import Header from '../components/Header'
+import About from '../components/About'
+import Experience from '../components/Experience'
+import Skills from '../components/Skills'
+import Hobbies from '../components/Hobbies'
+import Contact from '../components/Contact'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,7 +19,12 @@ export default function Home() {
 
       <Navbar />
       <main className={styles.main}>
-        <Portfolio />
+        <Header />
+        <About />
+        <Experience />
+        <Skills />
+        <Hobbies />
+        <Contact />
       </main>
 
       <footer className={styles.footer}>

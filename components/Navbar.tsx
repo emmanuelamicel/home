@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/Navbar.module.css';
 
 const links = [
-  { title: 'Home', link: '#home' },
+  { title: 'Home', link: '#header' },
   { title: 'A propos', link: '#about' },
   { title: 'Parcours', link: '#experience' },
   { title: 'Compétences', link: '#skills' },
