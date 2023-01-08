@@ -10,15 +10,17 @@ const links = [
   { title: 'Contact', link: '#contact' }
 ]
 
+const listLinks = links.map((item) => (
+  <li className={styles.link} key={item.title}>
+    <a href={item.link}>{item.title}</a>
+  </li>
+))
+
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.list}>
-        {links.map((item) => (
-          <li className={styles.link} key={item.title}>
-            <a href={item.link}>{item.title}</a>
-          </li>
-        ))}
+        {listLinks}
       </ul>
     </nav>
   )

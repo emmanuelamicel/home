@@ -1,20 +1,30 @@
 import React from 'react';
 import styles from '../styles/Header.module.css';
 
+const logos = [
+  { src: "sql.png", alt: "SQL" },
+  { src: "cs.png", alt: "C#" },
+  { src: "node.png", alt: "Node.js" },
+  { src: "docker.png", alt: "Docker" },
+  { src: "azure.png", alt: "Azure" }
+]
+
+const listLogos = logos.map((item) => (
+  <li className={styles.li} key={item.alt}>
+    <img src={item.src} alt={item.alt} className={styles.logo} />
+  </li>
+))
+
 export default function Header() {
   return (
     <section id='header' className={styles.section}>
       <header className={styles.intro}>
         <i>Bienvenue sur mon site.<br /> Je m'appelle <b>Emmanuel Amicel</b> et je suis</i>
       </header>
-      <h1 className={styles.h1}>DevOps</h1>
-      <p className={styles.headerText}>Je suis à la recherche d'un CDI sur <b>Rennes</b> à partir de <b>juin 2023</b>.</p>
+      <h1 className={styles.h1}>Développeur Full Stack</h1>
+      <div className={styles.headerText}>Je suis à la recherche d'un CDI sur <b>Rennes</b> à partir de <b>juin 2023</b>.</div>
       <ul className={styles.ul}>
-        <li className={styles.li}><img src="sql.png" alt="SQL" className={styles.logo} /></li>
-        <li className={styles.li}><img src="cs.png" alt="C#" className={styles.logo} /></li>
-        <li className={styles.li}><img src="node.png" alt="Node.js" className={styles.logo} /></li>
-        <li className={styles.li}><img src="docker.png" alt="Docker" className={styles.logo} /></li>
-        <li className={styles.li}><img src="azure.png" alt="Azure" className={styles.logo} /></li>
+        {listLogos}
       </ul>
     </section>
   )
