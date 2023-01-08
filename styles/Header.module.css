@@ -1,0 +1,49 @@
+.section {
+  background-image: url('../public/monte-stello.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  font-size: 2rem;
+}
+
+.h1 {
+  font-size: 5rem;
+}
+
+.headerText {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  list-style: none;
+}
+
+.li {
+  flex: auto;
+  max-width: 20%;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+  filter: contrast(150%) drop-shadow(0 0 0.75rem #000);
+}
